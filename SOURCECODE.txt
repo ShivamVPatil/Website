@@ -1,0 +1,555 @@
+
+THIS IS THE SOURCE CODE: 
+
+
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><i class="fas fa-laptop-code"></i>Project1</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5d39666ed9.js" crossorigin="anonymous"></script>  
+</head>
+<body>
+    <!-- NAVBAR SECTION -->
+
+<nav class="navbar">
+    <div class="navbar_container">
+        <a href="/" class="navbar__logo"><i class="fas fa-laptop-code"></i> WEBDev</a>
+        <div class="navbar_toggle" id="mobile-menu">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+            <li class="navbar_item">
+                <a href="/" class="navbar_links">SOURCECODE</a>
+            </li>
+            <li class="navbar_item">
+                <a href="/" class="navbar_links">HTML</a>
+            </li>
+            <li class="navbar_item">
+                <a href="/" class="navbar_links">CSS</a>
+            </li>
+            <li class="navbar_item">
+                <a href="/" class="navbar_links">JS</a>
+            </li>
+            <li class="navbar_button">
+                <a href="/" class="button">Sign Up</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<!-- HERO SECITON -->
+
+<div class="main">
+    <div class="main_container">
+        <div class="main_content">
+            <h1>MY FIRST WEBSITE </h1>
+            <h2>USING </h2>
+            <p>HTML and CSS</p>
+            <button class="main_btn"><a href="/">Get Started</a></button>
+        </div>
+        <div class="main_img--container">
+            <img src="pic1.svg" alt="pic" id="main_img">       
+        </div>
+    </div>
+</div>
+
+
+<!-- SERVICES SECITON -->
+
+<div class="services">
+    <h1>See what I've created </h1>
+    <div class="services_container">
+        <div class="services_card">
+            <h2>Effective design is necessary </h2>
+            <p>What I don't KNOW I can LEARN</p>
+            <button>Get Started</button>
+        </div>
+        <div class="services_card">
+            <h2>Are you ready?</h2>
+            <p>Take the leap.</p>
+ 
+            <button>Get Started</button>
+        </div>
+        
+    </div>
+</div>
+
+<!-- FOOTER SECTION -->
+
+<div class="footer_container">
+    <div class="footer_links">
+        <div class="footer_link-wrapper">
+            <div class="footer_link-items">
+                <h2>About us</h2>
+                <a href="/">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="/">Careers</a>
+                <a href="/">Investments</a>
+                <a href="/">Terms of Services</a>
+            </div>
+            <div class="footer_link-items">
+                <h2>Contact us</h2>
+                <a href="/">Contact</a>
+                <a href="/">Support</a>
+                <a href="/">Destinations</a>
+                <a href="/">Sponsorships</a>
+                
+            </div>
+        </div>
+        <div class="footer_link-wrapper">
+            <div class="footer_link-items">
+                <h2>Videos</h2>
+                <a href="/">Submit videos</a>
+                <a href="/">Ambassadors</a>
+                <a href="/">Agency</a>
+                <a href="/">Influencer</a>
+                
+            </div>
+            <div class="footer_link-items">
+                <h2>Social Media</h2>
+                <a href="/">Instagram</a>
+                <a href="/">Facebook</a>
+                <a href="/">Youtube</a>
+                <a href="/">Twitter</a>
+                
+            </div>
+        </div>
+    </div>
+    <div class="social_media">
+        <div class="social_media-wrap">
+            <div class="footer_logo">
+                <a href="/" id="footer_logo"><i class="fas fa-laptop-code"></i>WEBDev</a>
+            </div>
+            <p class="website_right">WEBDev 2021. All rights reserved.</p>
+            <div class="social_icons">
+                <a href="/" class="social_icon--link" target="blank"><i class="fab fa-facebook"></i></a>
+                <a href="/" class="social_icon--link" target="blank"><i class="fab fa-instagram"></i></a>
+                <a href="/" class="social_icon--link" target="blank"><i class="fab fa-twitter"></i></a>
+                <a href="/" class="social_icon--link" target="blank"><i class="fab fa-linkedin"></i></a>
+                <a href="/" class="social_icon--link" target="blank"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+CSS
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans',sans-serif;
+}
+
+.navbar{
+    background: rgb(0, 0, 0);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    font-size: 1.2rem;
+    z-index: 999;
+    top: 0;
+}
+
+.navbar_container{
+    display: flex;
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 100%;
+    height: 80px;
+    max-width: 1300px;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.navbar_menu{
+    display: flex;
+    align-items: center;
+    list-style: none;;
+    text-align: center;
+}
+
+.navbar_item{
+    height: 80px;
+}
+
+.navbar_links{
+    color:#fff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-decoration: none;
+    padding:0 1rem;
+   height:100%;
+}
+
+.navbar__logo{
+    background: #1FA2FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A6FFCB, #12D8FA, #1FA2FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+    
+background-size: 100%;
+-webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+.navbar_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 1rem;
+    width: 100%;
+    
+    }
+
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border:none;
+    padding:10px 20px;
+    border-radius: 3px;
+    color: #fff;
+    background-color: crimson;
+}    
+
+.button:hover{
+    background-color:coral;
+    transition: all 0.4s ease;
+}
+
+.navbar_links:hover{
+    color:#5243d8;
+    transition: all 0.4s ease;
+}
+
+/* HERO SECTION */
+
+
+.main{
+    background-color: #141414;
+
+}
+.main_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width:1300px;
+    padding:0 50px;
+}
+
+.main_content h1{
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top,#ff0844 0%,#ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    padding-right: 2rem;
+
+}
+
+.main_content h2{
+    font-size:s 5rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top,#b721ff 0%,#21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    padding-top: 5px;
+}
+
+.main_content p{
+    margin-top:1rem;
+    font-size: 2rem;
+    font-weight:700;
+    color: #fff;
+}
+
+.main_btn{
+    font-size: 1rem;
+    background-image: linear-gradient(to top,#f77062 0%,#fe5196 100%);
+    padding: 14px 32px;
+    border:none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+    outline:none;
+}
+
+.main_btn a{
+    text-decoration: none;
+    position: relative;
+    color:#fff;
+    z-index: 2;
+}
+
+.main_btn:after{
+    position:absolute;
+    content: '';
+    top:0;
+    left:0;
+    width: 0;
+    height: 100%;
+    background:#5243d8;
+    transition: all 0.35s;
+    border-radius: 4px;
+
+}
+
+.main_btn :hover{
+  color:#fff;
+   transition: all 0.3s ease;
+}
+
+.main_btn:hover:after{
+    width:100%;
+
+}
+
+.main_img--container{
+    text-align: center;
+}
+
+/* Services Section */
+
+.services{
+    background:#141414;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.services h1{
+    background-color: #ff8177;
+    background-image: linear-gradient(to right,#ff9177 0%,#ff867a 0%,#ff8c7f 21%,#f99185 52%,#cf556c 78%,#b12a5b 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+}
+
+.services_container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services_card{
+    margin:1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(17,17,17,0.6) 100%),url(/pic2.jpg);
+    background-size: cover;
+    position: relative;
+    color:#fff;
+}
+
+.services_card:nth-child(2){
+    background-image: linear-gradient(to bottom,rgba(0,0,0,0) 0%,rgba(17,17,17,0.6) 100%),url(/pic3.jpg);
+}
+
+.services h2{
+    position:absolute;
+    top:350px;
+    left:30px;
+
+}
+
+.services_card p{
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.services_card button{
+    color: #fff;
+    padding:10px 20px;
+    border:none;
+    outline:none;
+    border-radius: 4px;
+    background:#f77062;
+    position: absolute;
+    top:440px;
+    left: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+
+}
+.services_card:hover{
+    transform: scale(1.02);
+    transition: 0.2s ease;
+    
+}
+
+
+/* FOOTER  SECTION*/
+
+.footer_container{
+    background-color: #141414;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer_logo{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.footer_links{
+    width:100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_link-wrapper{
+    display: flex;
+}
+
+.footer_link-items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+    
+}
+
+
+.footer_link-items h2{
+    margin-bottom: 16px;
+}
+
+.footer_link-items >h2{
+    color: #fff;
+}
+
+.footer_link-items a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+
+}
+
+.footer_link-items a:hover{
+    color:#e9e9e9;
+    transition: 0.3s ease-out;
+}
+
+
+
+
+
+
+.social_icon--link{
+    color: #fff;
+    font-size: 24px;
+}
+
+.social_media{
+    max-width: 1000px;
+    width:100%;
+}
+
+.social_media-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+    max-width: 1000px;
+    margin:40 px auto 0 auto;
+}
+
+.social_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+    
+}
+.social_logo{
+    color: #fff;
+    justify-self: flex-start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.website_right{
+    color: #fff;
+    
+}
+
+
+
+
